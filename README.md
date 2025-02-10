@@ -1,4 +1,4 @@
-# Model.earth Cloud 2025
+# ModelEarth Cloud 2025
 
 1. Fork and clone our [cloud repo](https://github.com/modelearth/cloud) and [localsite repo](https://github.com/modelearth/localsite). 
 
@@ -13,7 +13,7 @@
 6. Submit a pull request with your new folder, and include a URL link to it whenever sending an email to Loren to pull your additions.
 
 
-Generally avoid commiting datasets in the cloud repo. 
+Generally avoid commiting datasets in the cloud repo.  
 Pull data directly from GitHub, Google Sheets and APIs.
 
 <!--
