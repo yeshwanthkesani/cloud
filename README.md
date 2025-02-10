@@ -1,8 +1,8 @@
-# Workshop 2025
+# Model.earth Cloud 2025
 
-1. Fork and clone our [workshop repo](https://github.com/modelearth/workshop) and [localsite repo](https://github.com/modelearth/localsite). 
+1. Fork and clone our [cloud repo](https://github.com/modelearth/cloud) and [localsite repo](https://github.com/modelearth/localsite). 
 
-2. Turn on GitHub Pages for both. So [account].github.com/workshop works.
+2. Turn on GitHub Pages for both. So [account].github.com/cloud works.
 
 3. In the "team/2025" subfolder, add a folder with your handle (firstname) from our [Member List](https://model.earth/community/members). Use lowercase.
 
@@ -13,7 +13,7 @@
 6. Submit a pull request with your new folder, and include a URL link to it whenever sending an email to Loren to pull your additions.
 
 
-Generally avoid commiting datasets in the workshop repo. 
+Generally avoid commiting datasets in the cloud repo. 
 Pull data directly from GitHub, Google Sheets and APIs.
 
 <!--
