@@ -6,7 +6,7 @@ Add code and document steps in [cloud/team/2005/[handle]](https://github.com/mod
 
 For your [handle] use lowercase firstname and optionally your last initial, or your nickname.
 
-Our [webhook repo](https://github.com/modelearth/webhook/) has a sample of Google Cloud Flask deployment steps you can copy and improve.
+Our [webhook repo](https://github.com/modelearth/webhook/) has a sample with Google Cloud Flask deployment steps you can copy and improve.
 
 
 ## Integration with localsite navigation
