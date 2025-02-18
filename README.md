@@ -1,8 +1,19 @@
 # ModelEarth Cloud 2025
 
+## Flask to Google Cloud
+
+Add code and document steps in [cloud/team/2005/[name]](https://github.com/modelearth/cloud/) for deploying your Flask site sample code to Google Cloud. 
+
+For your [name] use lowercase firstname and optionally your last initial, or your nickname.
+
+Our [webhook repo](https://github.com/modelearth/webhook/) has a sample of Google Cloud Flask deployment steps you can copy and improve.
+
+
+## Integration with localsite navigation
+
 1. Fork and clone our [cloud repo](https://github.com/modelearth/cloud) and [localsite repo](https://github.com/modelearth/localsite). 
 
-2. Turn on GitHub Pages for both. So [account].github.com/cloud works.
+2. Turn on GitHub Pages for both. So [account].github.io/cloud works.
 
 3. In the "team/2025" subfolder, add a folder with your handle (firstname) from our [Member List](https://model.earth/community/members). Use lowercase.
 
@@ -14,7 +25,7 @@
 
 
 Generally avoid commiting datasets in the cloud repo.  
-Pull data directly from GitHub, Google Sheets and APIs.
+Pull datasets directly from other GitHub repos, Google Sheets and/or APIs.
 
 <!--
 Let's document trying [Cursor AI with Claude](https://cursor.com).
