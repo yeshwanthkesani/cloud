@@ -15,13 +15,15 @@ Our [webhook repo](https://github.com/modelearth/webhook/) has a sample of Googl
 
 2. Turn on GitHub Pages for both. So [account].github.io/cloud works.
 
-3. In the "team/2025" subfolder, add a folder with your handle (firstname) from our [Member List](https://model.earth/community/members). Use lowercase and optionally include your last initial.
+3. In the "team/2025" subfolder, add a folder with your handle (firstname) from our [Member List](https://model.earth/community/members).
+Use lowercase and optionally include your last initial.
 
 4. Copy the index.html page and add a new title.
 
-5. Add your code additions.
+5. Add your code additions and document in a README.md file.
 
-6. Submit a pull request, and include a URL link when sending an email to Loren to pull your additions.
+6. Submit a Pull Request (PR), and include a URL link in the following format when sending an email to Loren to pull your additions.
+[account].github.io/cloud/team/2025/[name]
 
 
 Generally avoid commiting datasets in the cloud repo.  
