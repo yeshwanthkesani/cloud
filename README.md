@@ -1,10 +1,10 @@
-# ModelEarth Cloud 2025
+# ModelEarth Cloud
 
 ## Flask via Google Cloud
 
-Add code and document steps in [cloud/team/2005/[name]](https://github.com/modelearth/cloud/) for deploying your Flask site sample code to Google Cloud. 
+Add code and document steps in [cloud/team/2005/[handle]](https://github.com/modelearth/cloud/) for deploying your Flask site sample code to Google Cloud. 
 
-For your [name] use lowercase firstname and optionally your last initial, or your nickname.
+For your [handle] use lowercase firstname and optionally your last initial, or your nickname.
 
 Our [webhook repo](https://github.com/modelearth/webhook/) has a sample of Google Cloud Flask deployment steps you can copy and improve.
 
@@ -18,12 +18,12 @@ Our [webhook repo](https://github.com/modelearth/webhook/) has a sample of Googl
 3. In the "team/2025" subfolder, add a folder with your handle (firstname) from our [Member List](https://model.earth/community/members).
 Use lowercase and optionally include your last initial.
 
-4. Copy the index.html page and add a new title.
+4. Copy the [index.html page](https://github.com/ModelEarth/cloud/blob/main/index.html) to your new folder. Change the title to a description of the folder's content and/or add your handle in parentheses.
 
 5. Add your code additions and document in a README.md file.
 
 6. Submit a Pull Request (PR), and include a URL link in the following format when sending an email to Loren to pull your additions.
-[account].github.io/cloud/team/2025/[name]
+[account].github.io/cloud/team/2025/[handle]
 
 
 Generally avoid commiting datasets in the cloud repo.  
