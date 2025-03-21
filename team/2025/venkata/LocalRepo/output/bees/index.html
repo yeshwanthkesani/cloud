@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>RealityStream - Bees Location Forest Output</title>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="/localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+<script type="text/javascript" src="/localsite/js/earthscape.js" id="/localsite/js/earthscape.js"></script>
+<link type="text/css" rel="stylesheet" href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css">
+<link type="text/css" rel="stylesheet" href="/localsite/css/base.css" id="/localsite/css/base.css">
+<link type="text/css" rel="stylesheet" href="/localsite/css/base-tabulator.css" id="/localsite/css/base-tabulator.css">
+
+<script>
+loadMarkdown("README.md", "readmeDiv", "_parent");
+</script>
+
+<style>
+hr {
+  border: 0px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.tabulator-cell {
+  text-align: right;
+}
+.tabulator .tabulator-header {
+  display: inline;
+}
+</style>
+<script>
+  let my = {};
+  let myDataroot = "";
+
+  my = {};
+  my.dataset = myDataroot + "training/2022_increase-bees-y-test.csv";
+  my.elementID = "y-test";
+  loadEarthScape(my);
+
+  my = {};
+  my.dataset = myDataroot + "training/2022_increase-bees-y-train.csv";
+  my.elementID = "y-train";
+  loadEarthScape(my);
+
+  my = {};
+  my.dataset = myDataroot + "training/2022_increase-bees.csv";
+  my.elementID = "earthscape1";
+  loadEarthScape(my);
+
+  my = {};
+  my.dataset = myDataroot + "training/2022_increase-bees-X-train.csv";
+  my.elementID = "earthscape2";
+  loadEarthScape(my);
+
+  my = {};
+  my.dataset = myDataroot + "training/2022_increase-bees-X-test.csv";
+  my.elementID = "earthscape3";
+  loadEarthScape(my);
+
+</script>
+
+<style>
+.floatTabulatorLeft {
+  float: left;
+  margin-right: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="content contentpadding">
+
+<div id="readmeDiv"></div>
+
+<div class="floatTabulatorLeft">
+2022 Bees y Test (2 KB)<br>
+<div id="y-test" style=""></div><br>
+</div>
+
+<div class="floatTabulatorLeft">
+2022 Bees y Train (9 KB)<br>
+<div id="y-train" style=""></div><br>
+</div>
+
+<div class="floatTabulatorLeft">
+2022 Bees (4.1 MB)<br>
+<div id="earthscape1" style=""></div><br>
+</div>
+
+<div class="floatTabulatorLeft">
+2022 Bees X Train (3.3 MB)<br>
+<div id="earthscape2" style=""></div><br>
+</div>
+
+<div class="floatTabulatorLeft">
+2022 Bees X Test (817 K)<br>
+<div id="earthscape3" style=""></div><br>
+</div>
+
+</div>
+
+</body>
+</html>
