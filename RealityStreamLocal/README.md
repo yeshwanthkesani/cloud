@@ -105,41 +105,40 @@ If you install new Python packages:
 TO DO: Add these to a requirements file and document.
 Try to reduce to only the ones needed.
 
-'
-import os
-import pandas as pd
-import yaml
-import requests
+      import os
+      import pandas as pd
+      import yaml
+      import requests
 
-import pandas as pd
-import regex as re
-import os
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import pickle
-import yaml
-import requests
-#from collections import OrderedDict # Effort to retain incoming yaml order rather than alphabetizing.
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score, classification_report, roc_curve, roc_auc_score
-from imblearn.over_sampling import SMOTE
-from sklearn.impute import SimpleImputer
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+      import pandas as pd
+      import regex as re
+      import os
+      import pandas as pd
+      import numpy as np
+      import matplotlib.pyplot as plt
+      import pickle
+      import yaml
+      import requests
+      #from collections import OrderedDict # Effort to retain incoming yaml order rather than alphabetizing.
+      from sklearn.ensemble import RandomForestClassifier
+      from sklearn.linear_model import LogisticRegression
+      from sklearn.svm import SVC
+      from sklearn.neural_network import MLPClassifier
+      from sklearn.metrics import accuracy_score, classification_report, roc_curve, roc_auc_score
+      from imblearn.over_sampling import SMOTE
+      from sklearn.impute import SimpleImputer
+      from sklearn.model_selection import GridSearchCV
+      from sklearn.model_selection import train_test_split
+      from sklearn.preprocessing import StandardScaler
 
-// This probably includes scipy
-pip install imbalanced-learn
+      // This probably includes scipy
+      pip install imbalanced-learn
 
-import xgboost as xgb
-from xgboost import plot_importance
-import seaborn as sns
-import scipy.stats as stats
-'
+      import xgboost as xgb
+      from xgboost import plot_importance
+      import seaborn as sns
+      import scipy.stats as stats
+
 
 ### Creating a Pull Request
 
