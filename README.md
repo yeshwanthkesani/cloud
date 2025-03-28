@@ -45,9 +45,7 @@ We'll be using Tauri to deploy to Google Cloud by using Cloud Run for web apps o
 2. **Deploy to Cloud Run:** Use the gcloud run deploy command to deploy your container image to Cloud Run. 
 3. **Enable Continuous Deployment (Optional):** Set up Cloud Build triggers to automatically deploy your application whenever changes are pushed to your Git repository. 
 
-[Tauri](https://tauri.app/) provides a convenient direct-distribution of [SwarmUI](https://dreamstudio.com/swarm) using SvelteKit, Svelte and Rust, and hence no Electron.  Tauri provides the benefits of Rust without needing to be a Rust expert.
-
-SwarmUI also supports deploments via Microsoft's [Blazor Hybrid .NET MAUI C#](https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/)
+[Tauri](https://tauri.app/) provides a convenient direct-distribution of [SwarmUI](https://dreamstudio.com/swarm) using SvelteKit, Svelte and Rust, and hence no Electron.  Tauri provides you the benefits of Rust without needing to be a Rust expert. SwarmUI also supports deploments via Microsoft's [Blazor Hybrid .NET MAUI C#](https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/)
 
 
 ### Steps for Deploying to Cloud Run (Web App):
