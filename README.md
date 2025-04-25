@@ -38,6 +38,10 @@ CoLabs + [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-not
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) to create an app.
 -->
 
+## Firebase
+
+[Firebase + Flask Auth Setup](team/2025/revanth)
+
 ## Web App (Cloud Run):
 
 We'll be using Tauri to deploy to Google Cloud by using Cloud Run for web apps or Cloud Build for automated builds and deployments. 

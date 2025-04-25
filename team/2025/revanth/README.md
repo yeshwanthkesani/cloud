@@ -1,13 +1,17 @@
-# Revanth - Firebase + Flask Auth Setup (Cloud Team 2025)
+[cloud](../../../)
+# Firebase + Flask Auth Setup
+
+By Revanth
 
 This project contains a simple Flask app deployed using Firebase Hosting, with authentication handled by Firebase Authentication.
 
-It supports:
+Supports:
+
 - ✅ Email/password login
 - ✅ GitHub OAuth login
 - ✅ Passwordless sign-in via email link (for registered users only)
 
-This setup follows Loren's goal: command-based deployment and portable structure inside `team/2025/revanth`.
+Provides a command-based deployment and portable structure.
 
 ---
 
