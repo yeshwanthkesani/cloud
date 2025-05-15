@@ -40,9 +40,9 @@ CoLabs + [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-not
 
 ## Firebase
 
-[Firebase + Flask Auth Setup](team/2025/revanth)
+[Firebase + Flask Auth Setup](team/2025/revanth) - For Static hosting with User Auth
 
-## Web App (Cloud Run):
+## Web App (with Google Cloud Run - for Flask):
 
 We'll be using Tauri to deploy to Google Cloud by using Cloud Run for web apps or Cloud Build for automated builds and deployments. 
 
