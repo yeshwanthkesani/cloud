@@ -38,41 +38,17 @@ CoLabs + [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-not
 [Cloudflare Workers](https://developers.cloudflare.com/workers/) to create an app.
 -->
 
+
+## Web App (with Google Cloud Run - for Flask)
+
+[Starter code](RunModels) to run a colab using Google Cloud Run.
+
+https://claude.ai/public/artifacts/a3d76132-45f4-4155-aef8-4870adf64f20
+
+Promoted with: Create commands for creating a Google Cloud Run containing Flask and use the resulting project ID to create a website that executes a .ipynb file that resides in a Github repo. Whenever the repo is updated, update the website. The .ipynb file will be triggered by a button on a page and it will push files to another GitHub repo. Set permissions in Google to allow the push from the Google server to occur. Here's the function we use to push the files. (I provided the upload_reports_to_github function from the last step in our Run Models colab.)
+
+
 ## Firebase
 
 [Firebase + Flask Auth Setup](team/2025/revanth) - For Static hosting with User Auth
 
-## Web App (with Google Cloud Run - for Flask):
-
-We'll be using Tauri to deploy to Google Cloud by using Cloud Run for web apps or Cloud Build for automated builds and deployments. 
-
-1. **Build a Docker Image:** Create a Dockerfile to package your Tauri application as a container image.
-2. **Deploy to Cloud Run:** Use the gcloud run deploy command to deploy your container image to Cloud Run. 
-3. **Enable Continuous Deployment (Optional):** Set up Cloud Build triggers to automatically deploy your application whenever changes are pushed to your Git repository. 
-
-[Tauri](https://tauri.app/) provides a convenient direct-distribution of [SwarmUI](https://dreamstudio.com/swarm) using SvelteKit, Svelte and Rust, and hence no Electron.  Tauri provides you the benefits of Rust without needing to be a Rust expert. SwarmUI also supports deploments via Microsoft's [Blazor Hybrid .NET MAUI C#](https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/)
-
-
-### Steps for Deploying to Cloud Run (Web App):
-
-#### Create a Dockerfile.
-
-	FROM node:18-alpine as builder
-    WORKDIR /app
-    COPY . .
-    RUN npm install
-    RUN npm run build
-    FROM nginx:latest
-    COPY --from=builder /app/dist /usr/share/nginx/html
-    EXPOSE 80
-    CMD ["nginx", "-g", "daemon off;"]
-
-#### Build and deploy.
-
-    gcloud auth login  # Authenticate with Google Cloud
-    gcloud config set project <YOUR_PROJECT_ID> # Set your project ID
-    gcloud run deploy <SERVICE_NAME> --image <YOUR_IMAGE_NAME> --region <YOUR_REGION> # Deploy to Cloud Run
-
-#### Enable Continuous Deployment (Optional):
-
-**Create a Cloud Build trigger:** In the Google Cloud Console, create a trigger to automatically build and deploy your application when changes are pushed to your Git repository.
