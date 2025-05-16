@@ -91,13 +91,9 @@ gcloud services enable secretmanager.googleapis.com
 
 ## Part 2: Create GitHub Access Token
 
-Here's our existing notes on getting a GitHub token:
-
-
 1. In your [GitHub account](https://github.com), navigate to Settings (upper right menu)
 2. Navigate to Developer settings (lower left) > Personal access tokens. Choose Fine-grained tokens.
-3. Create a new token with repo scope (Maybe fine-grain is not necessary if repo scope can be selected)
-4. Save the token securely
+3. Create a new Fine-grained token so you can limit to one repo.
 
 <!-- Should we add more specific details on scope/permission settings? -->
 
