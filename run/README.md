@@ -41,18 +41,46 @@ Promoted with: Create commands for creating a Google Cloud Run containing Flask 
 
 ## Part 1: Set Up Google Cloud Project
 
+Open a terminal in the folder where your site will reside.
+
 ```bash
 # Install Google Cloud SDK if not already installed
 # https://cloud.google.com/sdk/docs/install
 
-# Initialize gcloud
+# Initialize gcloud - (2) Create a new configuration, or (1 or 3) use existing.
 gcloud init
 
-# Create a new project
-gcloud projects create your-project-id --name="Your Project Name"
+# If you add a new configuration, you may want to name if different from the project.
+
+modelearth-config
+
+# You'll be prompted to create a project and it will be set as active.
+# Here are the equivalent commands;
+
+# Create a new project - change the name as desired
+gcloud projects create your-project-id --name="modelearth-run-models"
 
 # Set the project as active
 gcloud config set project your-project-id
+
+# You'll likely be advised to update Google Cloud CLI components by running:
+
+gcloud components update
+
+# Get your billing account ID
+
+gcloud billing accounts list
+
+# For the following, you'll be promted to install gcloud Alpha Commands
+
+gcloud alpha billing accounts describe 000000-000000-000000
+
+# The above will fail initially, so
+# associate a billing account to your new "modelearth-run-models" project
+
+gcloud billing projects link modelearth-run-models --billing-account=BILLING_ACCOUNT_ID
+
+# TODO: If you don't have a billing account yet, fork this repo and document commands to add it here. Send a PR.
 
 # Enable required APIs
 gcloud services enable cloudbuild.googleapis.com
@@ -63,10 +91,16 @@ gcloud services enable secretmanager.googleapis.com
 
 ## Part 2: Create GitHub Access Token
 
-1. Go to your GitHub account settings
-2. Navigate to Developer settings > Personal access tokens
-3. Create a new token with repo scope
+Here's our existing notes on getting a GitHub token:
+
+
+1. In your [GitHub account](https://github.com), navigate to Settings (upper right menu)
+2. Navigate to Developer settings (lower left) > Personal access tokens. Choose Fine-grained tokens.
+3. Create a new token with repo scope (Maybe fine-grain is not necessary if repo scope can be selected)
 4. Save the token securely
+
+<!-- Should we add more specific details on scope/permission settings? -->
+
 
 ## Part 3: Store GitHub Token in Secret Manager
 
