@@ -13,7 +13,7 @@ Our guide provides commands for Google Cloud Run service setup with Flask to exe
 
 The application creates a simple web interface with a button that, when pressed, will:
 
-- Clone your GitHub repository (Later we'll sync when repo changes occur instead.)
+- Clone your GitHub repository (Later we'll sync when the repo changes instead.)
 - Execute the specified notebook
 - Push the resulting files to your target repository
 
