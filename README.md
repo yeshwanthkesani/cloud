@@ -41,11 +41,7 @@ CoLabs + [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-not
 
 ## Web App (with Google Cloud Run - for Flask)
 
-[Starter code](RunModels) to run a colab using Google Cloud Run.
-
-https://claude.ai/public/artifacts/a3d76132-45f4-4155-aef8-4870adf64f20
-
-Promoted with: Create commands for creating a Google Cloud Run containing Flask and use the resulting project ID to create a website that executes a .ipynb file that resides in a Github repo. Whenever the repo is updated, update the website. The .ipynb file will be triggered by a button on a page and it will push files to another GitHub repo. Set permissions in Google to allow the push from the Google server to occur. Here's the function we use to push the files. (I provided the upload_reports_to_github function from the last step in our Run Models colab.)
+[Our Google Cloud Run](run) to run a colab using Flask
 
 
 ## Firebase

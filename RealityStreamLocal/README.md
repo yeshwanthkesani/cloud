@@ -25,7 +25,7 @@ Ensure you have the following installed on your system before proceeding:
 cd cloud
 ```
 
-### 3. Avoid creating a new Branch
+### 3. Avoid creating a new branch
 
 Simply work in a fork
 
@@ -38,16 +38,18 @@ python3 -m venv ./venv
 ```
 #### OR
 
-if using vscode, please setup venv through default approach of selecting python environment in kernel options and then the environment should be able to find requieremnts.txt located in the models folder.
+if using vscode, setup venv through the default approach of selecting python environment in kernel options and then the environment should be able to find requieremnts.txt located in the models folder.
 
 Activate the virtual environment:
 
 **On macOS/Linux:**
+
 ```bash
 source venv/bin/activate
 ```
 
 **On Windows:**
+
 ```bash
 venv\Scripts\activate
 ```
