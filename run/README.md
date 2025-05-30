@@ -108,11 +108,18 @@ Enable required APIs (if first time)
 1. In your [GitHub account](https://github.com), navigate to Settings (upper right menu)
 2. Navigate to Developer settings (lower left) > Personal access tokens. Choose Fine-grained tokens.
 3. Create a new Fine-grained token so you can limit to one repo.
+4. Set the permissions to:  
+Contents: Read and write  
+Deployments: Read and write  
+Metadata: Read-only (gets set automatically)
 
 
 ## Part 3: Store GitHub Token in Secret Manager
 
-The token's name will be: github-token <!-- SInce this is account-wide, let's call it github-token-modelearth-run-models -->
+The token's name will be: github-token 
+<!-- Since this is account-wide, let's call it github-token-modelearth-run-models 
+TO DO: This will need to get sent into Run-Models-bkup.ipynb as a variable.
+-->
 
 ```bash
 # Create a secret for the GitHub token
