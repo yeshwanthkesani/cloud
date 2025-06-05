@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Flask App Demo by Yeshwanth (ModelEarth Cloud)</title>
-  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RealityStream App by Yeshwanth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 RealityStream App</h1>
+    <p class="subtitle">By Yeshwanth • Firebase + Flask • GitHub Deploy</p>
+  </header>
 
-  <link type="text/css" rel="stylesheet" href="/localsite/css/base.css" id="/localsite/css/base.css" />
-  <script type="text/javascript" src="/localsite/js/localsite.js?showheader=true"></script>
+  <main>
+    <section>
+      <h2>🔗 Navigation</h2>
+      <ul class="nav-list">
+        <li><a href="login.html">🔐 Login</a></li>
+        <li><a href="signup.html">📝 Sign Up</a></li>
+        <li><a href="sendlink.html">📧 Passwordless Login</a></li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>📄 README Preview</h2>
+      <div id="readmeDiv" class="markdown-box">Loading...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Hosted with <strong>Firebase</strong> | 🔄 Powered by <strong>GitHub Actions</strong></p>
+  </footer>
+
+  <script src="/localsite/js/localsite.js?showheader=true"></script>
   <script>
     loadMarkdown("README.md", "readmeDiv", "_parent");
   </script>
-</head>
-
-<body>
-  <div class="content contentpadding large-list">
-    <h1>🌐 Google Cloud Flask App by Yeshwanth</h1>
-    <p>This is part of the <strong>RealityStream</strong> project, hosted on Firebase with GitHub Action deploys and powered by Firebase Authentication.</p>
-
-    <h2>🔗 Navigation</h2>
-    <ul>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="sendlink.html">Passwordless Login</a></li>
-      <li><a href="finishSignIn.html">Finish Email Sign-In</a></li>
-      <li><a href="success.html">Success Page</a></li>
-    </ul>
-
-    <h2>📄 README Preview</h2>
-    <div id="readmeDiv"></div>
-  </div>
 </body>
 </html>
