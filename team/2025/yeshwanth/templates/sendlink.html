@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passwordless Sign-In - Yeshwanth Auth</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h2>Get Login Link by Email</h2>
+
+  <form id="send-link-form">
+    <input type="email" id="email" placeholder="Enter your email" required><br><br>
+    <button type="submit">Send Sign-In Link</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAhGR08SNw2UYGjxcuE7nTEjo-fCBqy-k",
+      authDomain: "model-earth-auth.firebaseapp.com",
+      projectId: "model-earth-auth",
+      storageBucket: "model-earth-auth.appspot.com",
+      messagingSenderId: "210880384827",
+      appId: "1:210880384827:web:020250824480aae2d8736e",
+      measurementId: "G-PNDV2RY8LZ"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    document.getElementById("send-link-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+
+      const actionCodeSettings = {
+        url: "https://model-earth-auth.web.app/finishSignIn.html",
+        handleCodeInApp: true
+      };
+
+      auth.sendSignInLinkToEmail(email, actionCodeSettings)
+        .then(() => {
+          window.localStorage.setItem('emailForSignIn', email);
+          document.getElementById("message").textContent = "Sign-in link sent! Check your email.";
+        })
+        .catch((error) => {
+          document.getElementById("message").textContent = error.message;
+        });
+    });
+  </script>
+</body>
+</html>

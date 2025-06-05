@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome - Yeshwanth Auth</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>🎉 Login Successful!</h1>
+  <p>Welcome! You are now signed in with Firebase Authentication.</p>
+
+  <a href="login.html">Log Out</a>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAhGR08SNw2UYGjxcuE7nTEjo-fCBqy-k",
+      authDomain: "model-earth-auth.firebaseapp.com",
+      projectId: "model-earth-auth",
+      storageBucket: "model-earth-auth.appspot.com",
+      messagingSenderId: "210880384827",
+      appId: "1:210880384827:web:020250824480aae2d8736e",
+      measurementId: "G-PNDV2RY8LZ"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    // Redirect if not logged in
+    auth.onAuthStateChanged((user) => {
+      if (!user) {
+        window.location.href = "login.html";
+      }
+    });
+
+    // Logout on link click
+    document.querySelector("a").addEventListener("click", function (e) {
+      e.preventDefault();
+      auth.signOut().then(() => {
+        window.location.href = "login.html";
+      });
+    });
+  </script>
+</body>
+</html>
